@@ -5,8 +5,6 @@
     "THREE": true
   },
   "rules": {
-    "new-cap": 0,
-    "comma-dangle": 0
   },
   "env": {
     "browser": true,
