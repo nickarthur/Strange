@@ -12,7 +12,7 @@ navigator.getUserMedia = navigator.getUserMedia || navigator.mozGetUserMedia ||
 const DESKTOP_MEDIA = ['screen', 'window'];
 const SERVERS = {
   iceServers: [{
-    urls: 'stun:stun.l.google.com:19302',
+    url: 'stun:stun.l.google.com:19302',
   }],
 };
 

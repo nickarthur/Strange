@@ -11,17 +11,17 @@ class Button {
 
   cursordown() {
     this.object3d.addEventListener('cursorleave', this.cursorup);
-    this.object3d.dispatch('buttondown');
+    this.object3d.dispatchEvent('buttondown');
     this.pressed = true;
   }
 
   cursorup() {
     this.object3d.removeEventListener('cursorleave', this.cursordown);
     this.object3d.addEventListener('cursorenter', this.cursordown);
-    this.object3d.dispatch('buttonup');
+    this.object3d.dispatchEvent('buttonup');
 
     if (this.pressed) {
-      this.object3d.dispatch('buttonpress');
+      this.object3d.dispatchEvent('buttonpress');
       this.pressed = false;
     }
   }
